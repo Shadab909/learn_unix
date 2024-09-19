@@ -1,0 +1,32 @@
+LINUX COMMANDS -
+cat - command used to print contents of a file
+head - gives fist 10 entries of a file. count can be lowered
+tail - opposite of head
+chmod - to make a file executable
+echo - prints whatever is after that
+echo $? - prints last exit code. 0 exit code means successful execution other means some error.
+echo $? after a normal script gives script's exit code after that it will give echo's exits code which is always 0.
+params passed with script - $0 is script name , $1,2... are params
+ps -a = list all currently running process with their ids.
+ps -id = list the process with given id.
+read -p "prompt" variable = it takes the input on the same line as prompt and store it in the variable in last.
+
+comparisions -
+  -lt =  less than
+  -gt = grater than
+  -le = less than or equal to
+  -ge = greater than or equal to
+  -eq = equal to
+  || = equal
+  ! variable =~ something = not equals to
+  
+  
+-z - checks whether next string is empty or not
+
+Note - ./xyz.sh (args) will simply execute the shell script with input. 
+But if we want the result of the script to assigned to another file then we use > symbol followed by output file. > symbols erases the files and populates it with result or create a new file if does not exist . while >> appends the result at the bottom of file
+
+
+cksum - checksum followed by file name gives us the checksum , byte size of file , file name. Use the know the integrity of the file.
+
+for making a script sleep in background we add a & sign in the end . "./delay.sh 5 &" It gives pId and message. Then we can write what we want finally ctrl D for exit
